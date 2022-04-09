@@ -1,0 +1,74 @@
+body {
+    background-color: #EEF9BF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.escondido {
+    display: none;
+}
+
+/* Título da página */
+.titulo h1 {
+    width: 540px;
+    margin: 40px auto 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+}
+
+/* Conteúdo da página */
+.conteudo {
+    width: 879px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carta {
+    width: 117px;
+    height: 146px;
+    margin-right: 34px;
+    margin-left: 34px;
+    margin-bottom: 34px;
+    background: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta img {
+    width: 100px;
+    height: 100px;
+}
+
+
+@media (max-width: 767px) {
+    /* Título da página mobile */
+    .titulo h1 {
+        width: 100%;
+        font-size: 36px;
+        text-align: center;
+        line-height: 42px;
+        letter-spacing: -0.004em;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .carta {
+        margin-right: 109px;
+        margin-left: 109px;
+    }
+}
