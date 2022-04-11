@@ -28,11 +28,11 @@ body {
     justify-content: center;
 }
 
-.carta {
+.conteudo > div {
     width: 117px;
     height: 146px;
-    margin-right: 34px;
-    margin-left: 34px;
+    margin-right: 17px;
+    margin-left: 17px;
     margin-bottom: 34px;
     background: #A7E9AF;
     border: 1px solid #99CEA8;
@@ -78,7 +78,7 @@ body {
         width: 100%;
     }
 
-    .carta {
+    .conteudo > div {
         margin-right: 109px;
         margin-left: 109px;
     }
