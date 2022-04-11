@@ -3,10 +3,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.escondido {
-    display: none;
-}
-
 /* Título da página */
 .titulo h1 {
     width: 540px;
@@ -42,16 +38,31 @@ body {
     border: 1px solid #99CEA8;
     border-radius: 5px;
     box-sizing: border-box;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.carta img {
-    width: 100px;
-    height: 100px;
+.face{
+    position: absolute;
+    backface-visibility: hidden;
 }
 
+.face img{
+    height: 100px;
+    width: 100px;
+}
+  
+.verso {
+    transform: rotateY( 180deg );
+  }
+
+.virar {
+    transform: rotateY(180deg);
+}
 
 @media (max-width: 767px) {
     /* Título da página mobile */
@@ -71,4 +82,5 @@ body {
         margin-right: 109px;
         margin-left: 109px;
     }
+
 }
